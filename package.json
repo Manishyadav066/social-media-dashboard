@@ -1,8 +1,15 @@
 {
-  "dependencies": {
-    "chart.js": "^4.5.1",
-    "lucide-vue-next": "^0.562.0",
-    "vue-chartjs": "^5.3.3",
-    "vue-router": "^4.6.4"
+  "name": "social-media-dashboard",
+  "version": "1.0.0",
+  "scripts": {
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "cd frontend && npm install",
+    "install-all": "npm run install-backend && npm run install-frontend",
+    "build-frontend": "cd frontend && npm run build",
+    "build": "npm run install-all && npm run build-frontend",
+    "start": "cd backend && node index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
